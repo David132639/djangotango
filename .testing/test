@@ -1,0 +1,2 @@
+rm -rf temporal
+python run_tests.py -u "https://github.com/David132639/djangotango.git" -s "2331269" -d "2020-01-01"
