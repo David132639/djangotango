@@ -4,7 +4,8 @@
     Index
 {% endblock %}
 {% block body_block %}
-        <h1>Rango says...</h1>
+        <h1>Index</h1>
+        <h2>Rango says...</h2>
         <div>
             {% if user.is_authenticated %}
                 howdy {{ user.username }}!
@@ -13,7 +14,9 @@
             {% endif %}
 
         </div>
-        
+        <div>
+            visits: {{ visits }}
+        </div>
         <div>
             Most Liked Categories
         </div> 
@@ -22,7 +25,7 @@
         <ul>
             {% for category in categories %}
             <!--<li>{{category.name}}</li>-->
-            <li><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a></li>
+            <li><a href="/rango/category/{{ category.slug }}">Category: {{ category.name }}</a></li>
             {% endfor %}
         </ul>
         {% else %}
