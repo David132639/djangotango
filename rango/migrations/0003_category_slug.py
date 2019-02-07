@@ -8,7 +8,6 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('rango', '0002_auto_20190124_2345'),
     ]
 
     operations = [
